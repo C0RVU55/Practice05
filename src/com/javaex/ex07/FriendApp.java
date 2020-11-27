@@ -17,7 +17,11 @@ public class FriendApp {
         System.out.println("친구를 3명 등록해 주세요");
 
         //친구정보 3명 입력 로직 --> 반복문 사용
-        /*
+        
+        /* 실패한 건데 마지막 배열만 3번 출력됨.
+         * 매번 들어오는 값을 새 클래스에 넣어야 되는데 매번 값이 반복문 밖에 선언된 클래스 1개에만 들어가니까 
+         * 반복문 3번 돌려도 클래스가 3개 생기는 게 아니라 클래스 1개 속 값만 3번 바뀌었던 거임.
+         
         for(int i=0; i<friendArray.length; i++) {
         	friendArray[i]=friend;
         	
@@ -32,9 +36,7 @@ public class FriendApp {
              	friend.setSchool(sc.nextLine());
              
              	System.out.println("---------------------------");
-
              }
-        	
         }
         */
         
@@ -54,7 +56,7 @@ public class FriendApp {
         	
         	
         }
-        	//순서 기억하기 : 값 입력 > 인스턴스 생성해서 입력받은 값 대입 > 인스턴스 주소를 배열에 대입
+        	// ***순서 기억하기*** : 값 입력 > *인스턴스 생성*해서 입력받은 값 대입 > 인스턴스 주소를 *배열에 대입*
         
         	// 친구정보(이름) 입력받기
         
