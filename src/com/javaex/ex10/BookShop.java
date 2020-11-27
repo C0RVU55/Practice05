@@ -40,9 +40,9 @@ public class BookShop {
     //(2)전달받은 배열을 모두 출력하는 메소드
     private static void displayBookInfo(Book[] books) {
         
-    	//코드작성 --> 상태코드를 어떻게 적용시켜야 되는지 모르겠음.
+    	//코드작성 --> 다 대여중으로 나옴. 상태코드를 어떻게 적용시켜야 되는지 모르겠음.
     	for(int i=0; i<books.length; i++) {
-    		System.out.println(books[i].bookNo+" 책 제목:"+books[i].title+", 작가:"+books[i].author+", 대여 유무:"+books[i].print(stateCode));
+    		books[i].print();
     	}
     }
 }

@@ -3,10 +3,10 @@ package com.javaex.ex10;
 public class Book {
     
 	//필드
-	int bookNo;
-	String title;
-	String author;
-	int stateCode;
+	private int bookNo;
+	private String title;
+	private String author;
+	private int stateCode;
 	
 	//생성자
 	public Book(int stateCode) {
@@ -44,12 +44,14 @@ public class Book {
 		System.out.println(title+"이(가) 대여됐습니다.");
 	}
 	
-	public void print(int stateCode) {
+	public void print() {
+		String stock;
 		if(stateCode==1) {
-			String stock="재고 있음";
+			stock="재고 있음";
 		}else {
-			String stock="대여중";
+			stock="대여중";
 		}
+		System.out.println(bookNo+" 책 제목:"+title+", 작가:"+author+", 대여 유무:"+stock);
 	}
     
     
