@@ -40,7 +40,7 @@ public class BookShop {
     //(2)전달받은 배열을 모두 출력하는 메소드
     private static void displayBookInfo(Book[] books) {
         
-    	//코드작성 --> 다 대여중으로 나옴. 상태코드를 어떻게 적용시켜야 되는지 모르겠음.
+    	//코드작성 --> 다 대여중으로 나왔음. 상태코드를 어떻게 적용시켜야 되는지 몰랐는데 main에서 쓰는 생성자에 stateCode값을 1로 정해야 하는 거였음.
     	for(int i=0; i<books.length; i++) {
     		books[i].print();
     	}
