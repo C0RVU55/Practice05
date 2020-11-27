@@ -28,7 +28,7 @@ public class BookShop {
 
         // (1) 입력된 번호에 맞는 책을 찾아 대여 되었음(상태코드=0)을 체크 합니다.
         // 코드작성
-        books[num].rent(num);
+        books[num-1].rent(); //출력되는 숫자-1=배열의 자리
         
       
         System.out.println("*****도서 정보 출력하기******");

@@ -45,8 +45,8 @@ public class Book {
 		this.author = author;
 	}
     
-	//메소드 일반
-	public void rent(int bookNo) {
+	//메소드 일반 - 아래 필드 변수에 다 this. 넣은 코드도 있는데 이거 있으면 메모리에 올라간 각 배열의 변수를 가리키니까 정확하긴 할듯.
+	public void rent() {
 		stateCode=0;
 		System.out.println(title+"이(가) 대여됐습니다.");
 	}
